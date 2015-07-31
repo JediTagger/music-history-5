@@ -1,0 +1,93 @@
+<head>
+  <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+  <div class="flex">
+
+    <header class="top-header">
+      <nav class="style">
+        <ul>
+          <li class='one'>View Music </li>
+          <li class="two"><a href="#">Add Music</a> </li>
+          <li class="three"><a href="#">Profile</a></li>
+      </nav>
+    </header>
+
+    <article class="article1">
+      <section class="section1">
+        Song length:
+      <br>
+      <input type="range" name="length-range" min="1" max="30" step="0.5" value="10">
+        <br>
+        <br>
+        Artist:
+        <br>
+        <br>
+        <input name="artist" list="artist_name" placeholder="Options">
+          <datalist id="artist_name">
+              <option value="Artist1">
+              <option value="Artist2">
+              <option value="Artist3">
+              <option value="Artist4">
+          </datalist>
+        <br>
+        <br>
+        Album:
+        <br>
+        <br>
+        <input name="album" list="album_name" placeholder="Options">
+          <datalist id="album_name">
+              <option value="Album1">
+              <option value="Album2">
+              <option value="Album3">
+              <option value="Album4">
+          </datalist>
+        <br>
+        <br>
+        Genre:
+        <br>
+        <br>
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" name="rock" value="rock"> Rock
+            </td>
+            <td>
+              <input type="checkbox" name="classical" value="classical"> Classical
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="pop" value="pop"> Pop
+            </td>
+            <td>
+              <input type="checkbox" name="jazz" value="jazz"> Jazz          
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="blues" value="blues"> Blues          
+            </td>
+            <td>
+              <input type="checkbox" name="hihop" value="hiphop"> Hip hop          
+            </td>
+          </tr>
+        </table>
+        <br>
+        <div class="center">
+        <input type="submit" value="Filter"></input>
+        </div>
+      </section>
+    </article>
+
+    <article class="article2">
+      <section id="songList" class="section2">
+      </section>
+    </article>
+
+  </div>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script data-main="javascripts/main" 
+          src="bower_components/requirejs/require.js"></script>
+</body>

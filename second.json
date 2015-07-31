@@ -1,0 +1,39 @@
+{
+	"songs": [
+		{
+			"name": "Sweet Lorraine",
+			"artist": "Michigan Jake",
+			"album": "For the Record"
+		},
+		{
+			"name": "Always",
+			"artist": "Michigan Jake",
+			"album": "For the Record"
+		},
+		{
+			"name": "Beginning to See the Light",
+			"artist": "Michigan Jake",
+			"album": "For the Record"
+		},
+		{
+			"name": "Gershwin Medley",
+			"artist": "Michigan Jake",
+			"album": "For the Record"
+		},
+		{
+			"name": "Forgive Me",
+			"artist": "MC4",
+			"album": "MC41"
+		},
+		{
+			"name": "Once Upon a Dream",
+			"artist": "MC4",
+			"album": "MC41"
+		},
+		{
+			"name": "Old Black Magic",
+			"artist": "MC4",
+			"album": "MC41"
+		}
+	]
+}
