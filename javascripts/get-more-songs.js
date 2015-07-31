@@ -7,7 +7,7 @@ define(function() {
 				var nextSong = "<div id=\"song\"" + data.songs[i] 
 					+ ">" + data.songs[i].name + " by " 
 					+ data.songs[i].artist + " on the album " 
-					+ data.songs[i].album + "<button id=\"rmv\">Remove</button></div>";
+					+ data.songs[i].album + " <button id=\"rmv\">Remove</button></div>";
 				$('#songList').prepend(nextSong);
 			}
 		});
