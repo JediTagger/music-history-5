@@ -1,0 +1,55 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+table {
+	font: 100% $font-stack;
+}
+
+nav {
+	margin-bottom: 1em;
+	border: 2px solid black;
+	background-color: #FFB4B0;
+}
+
+.center {
+	text-align: center;
+}
+
+#song {
+	margin-bottom: 10px;
+}
+
+.btm-marg {
+	margin-bottom: 10px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+// @media (min-width: 550px) {}
+
+.side {
+	background-color: #4DD7FA;
+	border: 2px solid black;
+	margin-right: 1em;
+	padding: 1em;
+}
+
+.main {
+	background-color: #FEFAC0;
+	border: 2px solid black;
+	padding: 1em;
+}
+
+label {
+	display: block;
+}

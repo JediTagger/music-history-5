@@ -1,17 +1,16 @@
-define(function() {
-	$.ajax({
-		url: "main.json"
-	}).done(function(data) {
-		for (var i = 0; i < data.songs.length; i++) {
-			var nextSong = "<div id=\"song\"" + data.songs[i] 
-				+ ">" + data.songs[i].name + " by " 
-				+ data.songs[i].artist + " on the album " 
-				+ data.songs[i].album + " <button id=\"rmv\">Remove</button></div>";
-			$('#songList').prepend(nextSong);
-		}
-		$('#songList').append("<button id=\"more\">More ></button>");
-		$(document).on("click", "#rmv", function() {
-			$(this).parent().remove();
-		});
-	});
+define(["jquery"],function($) {
+  return {
+    popSongs: function(callback) {
+      $.ajax({
+        url: "https://flickering-inferno-4277.firebaseio.com/.json"
+      }).done(function(data) {
+        callback.call(this, data);
+      });
+    }
+  };
 });
+
+//this is a function that returns an object.  It has one key/value pair.
+//the key is popSongs and the value is a funciton that takes one argument.
+//the function gets the data from main.json and calls the function given
+//as the argument on the .songs of the data.

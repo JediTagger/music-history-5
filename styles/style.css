@@ -1,0 +1,30 @@
+.article1 {
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+.section1 {
+  margin: 1em;
+}
+
+.article2 {
+  background-color: #FEFAC0;
+  border: 2px solid black;
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+.section2 {
+  margin: 1em;
+  padding: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+#song {
+  margin-bottom: 10px;
+}
