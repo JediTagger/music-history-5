@@ -39,4 +39,16 @@ nav {
 label {
   display: block; }
 
+.success {
+  display: none; }
+
+.clear {
+  display: none; }
+
+.incomplete {
+  display: none; }
+
+#another {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
